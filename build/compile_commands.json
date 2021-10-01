@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/usr/local/src/CodeRepos/bitcoin-api-cpp/build/src/bitcoinapi",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -std=gnu++17 -o CMakeFiles/bitcoinapi_static.dir/bitcoinapi.cpp.o -c /usr/local/src/CodeRepos/bitcoin-api-cpp/src/bitcoinapi/bitcoinapi.cpp",
+  "file": "/usr/local/src/CodeRepos/bitcoin-api-cpp/src/bitcoinapi/bitcoinapi.cpp"
+},
+{
+  "directory": "/usr/local/src/CodeRepos/bitcoin-api-cpp/build/src/bitcoinapi",
+  "command": "/bin/x86_64-linux-gnu-g++-9  -Dbitcoinapi_EXPORTS  -g -fPIC   -std=gnu++17 -o CMakeFiles/bitcoinapi.dir/bitcoinapi.cpp.o -c /usr/local/src/CodeRepos/bitcoin-api-cpp/src/bitcoinapi/bitcoinapi.cpp",
+  "file": "/usr/local/src/CodeRepos/bitcoin-api-cpp/src/bitcoinapi/bitcoinapi.cpp"
+}
+]

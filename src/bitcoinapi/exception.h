@@ -17,11 +17,13 @@
 #include <jsoncpp/json/json.h>
 #include <jsoncpp/json/reader.h>
 #include <jsoncpp/json/value.h>
-#include <jsonrpccpp/client.h>
+//#include <jsonrpccpp/client.h>
+#include <jsonrpccxx/client.hpp>
 
 using Json::Value;
 using Json::Reader;
-using jsonrpc::Errors;
+//using jsonrpc::Errors;
+using jsonrpccxx::error_type;
 
 
 class BitcoinException: public std::exception
@@ -34,11 +36,11 @@ public:
 	explicit BitcoinException(int errcode, const std::string& message) {
 		
 		/* Connection error */
-		if(errcode == Errors::ERROR_CLIENT_CONNECTOR){
+		if(errcode == error_type::invalid_request){
 			this->code = errcode;
 			this->msg = removePrefix(message, " -> ");		
 		/* Authentication error */
-		}else if(errcode == Errors::ERROR_RPC_INTERNAL_ERROR && message.size() == 18){
+		}else if(errcode == error_type::internal_error && message.size() == 18){
 			this->code = errcode;
 			this->msg = "Failed to authenticate successfully";
 		/* Miscellaneous error */

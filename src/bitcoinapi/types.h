@@ -12,8 +12,17 @@
 
 #include <string>
 #include <vector>
+#include <cpp-httplib/httplib.h>
+#include <nlohmann/json.hpp>
+//#include <jsoncpp/json/json.h>
+#include <jsonrpccxx/common.hpp>
+#include <jsonrpccxx/batchclient.hpp>
+#include <jsonrpccxx/client.hpp>
+#include <jsonrpccxx/dispatcher.hpp>
+#include <jsonrpccxx/iclientconnector.hpp>
+#include <jsonrpccxx/server.hpp>
+#include <jsonrpccxx/typemapper.hpp>
 
-#include <jsoncpp/json/json.h>
 
 	/* === General types === */
 	struct getinfo_t{

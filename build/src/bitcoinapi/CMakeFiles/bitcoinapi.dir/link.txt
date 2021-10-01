@@ -1,0 +1,1 @@
+/bin/x86_64-linux-gnu-g++-9 -fPIC -g  -shared -Wl,-soname,libbitcoinapi.so.0 -o libbitcoinapi.so.0.1.0 CMakeFiles/bitcoinapi.dir/bitcoinapi.cpp.o  -lcurl -ljsonrpccpp-common -ljsonrpccpp-client 

@@ -1,0 +1,2 @@
+/bin/ar qc libbitcoinapi.a  CMakeFiles/bitcoinapi_static.dir/bitcoinapi.cpp.o
+/bin/ranlib libbitcoinapi.a
